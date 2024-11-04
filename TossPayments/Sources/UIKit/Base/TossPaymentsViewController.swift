@@ -46,10 +46,11 @@ final class TossPaymentsViewController: UIViewController {
         navigationController?.isNavigationBarHidden = true
         self.presentationController?.delegate = self
         
+        view.backgroundColor = .white
         view.addSubview(webView)
         webView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            webView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            webView.topAnchor.constraint(equalTo: view.topAnchor),
             webView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             webView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             webView.leadingAnchor.constraint(equalTo: view.leadingAnchor)
