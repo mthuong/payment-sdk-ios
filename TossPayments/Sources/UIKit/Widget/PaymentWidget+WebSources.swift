@@ -17,7 +17,7 @@ extension PaymentWidget {
           <script src="https://js.tosspayments.com/\(TossPaymentsEnvironment.stage)/payment-widget"></script>
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         </head>
-        <body style="margin:0;padding:0;overflow:hidden;">
+        <body style="margin:0;padding:0;overflow:hidden;background-color:white;">
             <div id="payment-method"></div>
             <div id="agreement"></div>
         </body>
