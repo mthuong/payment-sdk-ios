@@ -27,7 +27,7 @@ final class BrowserPopupWindowController: UIViewController {
         self.popupWebView = popupWebView
         super.init(nibName: nil, bundle: nil)
         if #available(iOS 13.0, *) {
-            view.backgroundColor = .systemBackground
+            view.backgroundColor = .white
         } else {
             view.backgroundColor = .white
         }
