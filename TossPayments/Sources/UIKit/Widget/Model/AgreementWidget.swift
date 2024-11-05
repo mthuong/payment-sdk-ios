@@ -28,7 +28,7 @@ public final class AgreementWidget: WKWebView, PaymentWidgetComponent {
             isInspectable = true
         }
 #endif
-
+        backgroundColor = .white
     }
     
     required init?(coder: NSCoder) {
