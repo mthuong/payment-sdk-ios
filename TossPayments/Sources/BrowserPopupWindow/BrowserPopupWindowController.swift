@@ -52,6 +52,7 @@ final class BrowserPopupWindowController: UIViewController {
     
     // MARK: - Helpers
     private func autoLayout() {
+        popupWebView.backgroundColor = .white
         self.view.addSubview(popupWebView)
         self.popupWebView.translatesAutoresizingMaskIntoConstraints = false
         
