@@ -31,6 +31,7 @@ public struct TossPaymentsView: View {
         VStack {
             TossPaymentsWebView(service: service)
         }
+        .background(Color.white)
     }
     
     public func onSuccess(
