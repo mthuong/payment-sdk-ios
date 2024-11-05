@@ -71,6 +71,7 @@ public final class PaymentWidget: NSObject, HandleURLResult {
     
     // MARK: Public properties
     public weak var delegate: TossPaymentsDelegate?
+    public weak var paymentMethodsWidgetUIDelegate: TossPaymentsWidgetUIDelegate?
     public weak var agreementUIDelegate: TossPaymentsAgreementUIDelegate?
     public weak var widgetStatusDelegate: TossPaymentsWidgetStatusDelegate?
     
@@ -132,6 +133,7 @@ public final class PaymentWidget: NSObject, HandleURLResult {
         
         self.paymentMethodWidget = paymentMethodWidget
         paymentMethodWidget.widgetStatusDelegate = widgetStatusDelegate
+        paymentMethodWidget.widgetUIDelegate = paymentMethodsWidgetUIDelegate
         return paymentMethodWidget
     }
     
