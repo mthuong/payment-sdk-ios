@@ -29,6 +29,7 @@ public final class PaymentMethodWidget: WKWebView, PaymentWidgetComponent {
             isInspectable = true
         }
 #endif
+        backgroundColor = .white
     }
     
     required init?(coder: NSCoder) {
